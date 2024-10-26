@@ -8,7 +8,8 @@ Annotated bibliographies are used to prepare review articles and for self-study 
 The classic annotated bibliography could be enhanced with graphical objects to assist in the recall of the article content. 
 Illustrations are worth a thousand words per image and aid in locating the desired entry for rereading.
 
-<img width="1190" alt="toc" src="https://github.com/user-attachments/assets/16402c07-84c7-4fff-854f-758e4bada18c">
+
+<img width="1164" alt="Screenshot 2024-10-26 at 5 32 22 AM" src="https://github.com/user-attachments/assets/2df99895-ce1e-461e-b83d-3957b863dfa0">
 
 
 ## The problem that this repo addresses
@@ -54,6 +55,8 @@ Doing this task on either web service is more fun than doing it locally.
 - Table of contents with hyperlinks to accelerate navigation.
 - Header with running title and page numbers in X of N pages to ease reassembly of printed version when mixed with other printouts while traveling.
 - Uses BibLaTeX. If you have BibTeX entries, you need to delete the *annote* fields. No further changes should be required.
+
+<img width="1190" alt="toc" src="https://github.com/user-attachments/assets/16402c07-84c7-4fff-854f-758e4bada18c">
 
 ## Limitations
 
