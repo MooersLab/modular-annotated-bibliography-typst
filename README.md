@@ -11,6 +11,9 @@ Illustrations are worth a thousand words per image and aid in locating the desir
 
 <img width="1164" alt="Screenshot 2024-10-26 at 5 32 22 AM" src="https://github.com/user-attachments/assets/2df99895-ce1e-461e-b83d-3957b863dfa0">
 
+## Quick start
+
+Download the zip file.
 
 ## The problem that this repo addresses
 The current support for annotated bibliographies using LaTeX or org-mode is limited to supporting the automated insertion of a few sentences in a single paragraph.
@@ -97,6 +100,10 @@ Due to this labor, I kept this template to a minimum.
 
 ### Local install
 After git cloning this Repository (or downloading the zip fil)e, copy the folder to your project folder and run the typst binary on the master file.
+
+### Related repositories
+
+[Glossary conversion](https://github.com/MooersLab/latex-gloassaries-to-typst-gloassarium)
 
 
 ## Update history
