@@ -52,7 +52,6 @@ Doing this task on either web service is more fun than doing it locally.
 
 
 ### Downsides to Typst
-- Poor support for downloading your project from the **typst.app**. You can only download the PDF of your project with a single click of the button.
 - The supported fonts on the webservice differ from locally available fonts.
 - No strong support from sourcing files outside of the current project.
 - The manual installation of these packages locally is convoluted; a package manager for typst packages is needed.
@@ -97,7 +96,7 @@ Due to this labor, I kept this template to a minimum.
 2. Copy the contents of each file to a file of the same name on the typst app.
 
 ### Local install
-After git cloning this Repository, copy the folder to your project folder and run the typst binary on the master file.
+After git cloning this Repository (or downloading the zip fil)e, copy the folder to your project folder and run the typst binary on the master file.
 
 
 ## Update history
