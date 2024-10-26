@@ -4,22 +4,21 @@
 
 # Template for making an enhanced and illustrated annotated bibliography with Typst
 
-Annotated bibliographies are used in the preparation of review articles and for the purpose of self-study in a new field.
-The classic annotated bibliography is not enhanced with illustrations. 
-Illustrations are worth a thousand words per image.
-They can enhance the recall of the material in an article.
+Annotated bibliographies are used to prepare review articles and for self-study in a new field.
+The classic annotated bibliography could be enhanced with graphical objects to assist in the recall of the article content. 
+Illustrations are worth a thousand words per image and aid in locating the desired entry for rereading.
 
 ## The problem that this repo addresses
-The current support for annotated bibliographies using LaTeX or org-mode are limited to supporting the automated insertion of a few sentences in a single paragraph.
+The current support for annotated bibliographies using LaTeX or org-mode is limited to supporting the automated insertion of a few sentences in a single paragraph.
 The result is rather dull.
-They depend upon the annotation being made in an annote or annotaton field inside of the bibliographic entry in a bibliographic file.
+They depend upon the annotation being made in an `annote` or `annotation` field inside of the bibliographic entry in a bibliographic file.
 You have to go through extra measures to be able to introduce blank lines between paragraphs if you are using BibTeX. 
 If you are using BibLaTeX, the situation is even worse.
 You must use an empty display math macro to introduce a blank line between paragraphs.
 
 ## The solution
 The workaround is to import the annotations from external files to evade mingling by the bibliography processing software.
-The annotations are stored one typst file per citation.
+The annotations are stored in one typst file per citation.
 These files have the cite key as their file name.
 
 ## Typst
@@ -27,17 +26,30 @@ These files have the cite key as their file name.
 The online web service, typst.app, provides live previews. 
 This provides the instant gratification that so many crave.
 This also accelerates debugging the source code.
-It makes the experience of writing the annotated bibliography a little more enjoyable than doing the same task with Overleaf.
+It makes the experience of writing the annotated bibliography more enjoyable than doing the same task with Overleaf.
+
+## Features
+
+- Modular annotations that can be reused in related projects. Unfortunately, typst has weak support for file paths. The annotations must reside in a sub-folder of the current project. You could store these in a private GitHub repository and then pull these to other projects.
+  - Support for embedding images and tables with captions in the figure environment.
+  - Support for type set equations.
+  - Support for including code listings.
+  - An index.
+- A list of acronyms.
+- A glossary.
+- A bibliography that includes entries that are outside the annotated bibliography.
+- Uses BibLaTeX. If you have BibTeX entries, you need to delete the annote fields. No further changes should be required.
 
 ## Limitations
 
-I do not know yet what the practical limit is in terms of the number of imported external files.
+I need to determine the practical limit to the number of imported external files.
 
 
 ## Possbile alternatives
-There are two other modular annotated bibliography repositories on this website that support making modular bibliographies using LaTeX.
-From prior experience with importing about 370 external files into a single LaTeX document on Overleaf, I know that these LaTeX variants are up to the task of creating a large annotated bibliography.
-That downside to using OverLeaf is that you have to click the compile button to have your edits deployed in the exported PDF whereas this happens automatically with the live previews provided by the typst.app web service.
+This website has other repositories for templates to make modular annotated bibliographies. 
+They use LaTeX.
+From prior experience importing about 370 external files into a single LaTeX document on Overleaf, I know these LaTeX variants can create an extensive modular and illustrated annotated bibliography.
+The downside to OverLeaf is that you must click the **compile** button to have your edits deployed in the exported PDF, which happens automatically with the live previews provided by the typst.app web service.
 
 
 ## Installation
@@ -46,12 +58,10 @@ That downside to using OverLeaf is that you have to click the compile button to 
 
 Unlike the situation with Overleaf, it is not possible to upload into the typst.app a project as a zip file.
 Until the day that I create a template project for the typst universe, you will have to copy the contents of each file into files within your project folder on typst.
-Due to this labor, I have tried to keep this template to minimum.
+Due to this labor, I kept this template to a minimum.
 
 1. Start a new project on your online account.
 2. Copy the contents of each file to a file of the same name on the typst app.
-
-
 
 ### Local install
 After git cloning this Repository, copy the folder to your project folder and run the typst binary on the master file.
