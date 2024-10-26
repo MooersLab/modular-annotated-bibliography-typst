@@ -25,6 +25,19 @@ The workaround is to import the annotations from external files to evade minglin
 The annotations are stored in one typst file per citation.
 These files have the cite key as their file name.
 
+<img width="715" alt="Screenshot 2024-10-26 at 5 43 23 AM" src="https://github.com/user-attachments/assets/0e9e6ab1-5ee2-4600-bcf9-5cc6ca78d613">
+
+## Usage
+
+1. Create a typ file for each entry and store in bibNotes folder.
+2. Store associated image files in the images subfolder.
+3. Inject the bibliographic entry in a heading by calling with its cite key.
+4. Enjoy!
+
+<img width="1135" alt="Screenshot 2024-10-26 at 5 42 34 AM" src="https://github.com/user-attachments/assets/74601055-0c51-4bfd-8ab0-5936552eee8c">
+
+
+
 ## Typst
 
 The online web service, **typst.app**, provides live previews. 
@@ -33,6 +46,7 @@ This also accelerates debugging the source code.
 The web service also provides easy access to other packages.
 The experience of writing the annotated bibliography on Typst is more enjoyable than doing the same task with Overleaf.
 Doing this task on either web service is more fun than doing it locally.
+
 
 
 
