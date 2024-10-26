@@ -30,7 +30,7 @@ It makes the experience of writing the annotated bibliography more enjoyable tha
 
 ## Features
 
-- Modular annotations that can be reused in related projects. Unfortunately, typst has weak support for file paths. The annotations must reside in a sub-folder of the current project. You could store these in a private GitHub repository and then pull these to other projects.
+- Modular annotations that can be reused in related projects. Unfortunately, typst has weak support for file paths. The annotations must reside in a sub-folder of the current project. You could store these in a private GitHub repository and then pull the file to other projects for reuse.
   - Support for embedding images and tables with captions in the figure environment.
   - Support for type set equations.
   - Support for including code listings.
@@ -38,7 +38,9 @@ It makes the experience of writing the annotated bibliography more enjoyable tha
 - A list of acronyms.
 - A glossary.
 - A bibliography that includes entries that are outside the annotated bibliography.
-- Uses BibLaTeX. If you have BibTeX entries, you need to delete the annote fields. No further changes should be required.
+- Table of contents with hyperlinks to accelerate navigation.
+- Header with running title and page numbers in X of N pages to ease reassembly of printed version when mixed with other printouts while traveling.
+- Uses BibLaTeX. If you have BibTeX entries, you need to delete the *annote* fields. No further changes should be required.
 
 ## Limitations
 
