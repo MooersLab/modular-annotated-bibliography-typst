@@ -2,7 +2,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
-# Template for making an enhanced and illustrated annotated bibliography with Typst
+# Template for making an enhanced and illustrated annotated bibliography with Typst using BibLaTeX
 
 Annotated bibliographies are used to prepare review articles and for self-study in a new field.
 The classic annotated bibliography could be enhanced with graphical objects to assist in the recall of the article content. 
