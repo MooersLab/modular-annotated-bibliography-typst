@@ -8,10 +8,13 @@ Annotated bibliographies are used to prepare review articles and for self-study 
 The classic annotated bibliography could be enhanced with graphical objects to assist in the recall of the article content. 
 Illustrations are worth a thousand words per image and aid in locating the desired entry for rereading.
 
+<img width="1190" alt="toc" src="https://github.com/user-attachments/assets/16402c07-84c7-4fff-854f-758e4bada18c">
+
+
 ## The problem that this repo addresses
 The current support for annotated bibliographies using LaTeX or org-mode is limited to supporting the automated insertion of a few sentences in a single paragraph.
 The result is rather dull.
-They depend upon the annotation being made in an `annote` or `annotation` field inside of the bibliographic entry in a bibliographic file.
+They depend upon the annotation being made in an `annote` or `annotation` field inside the bibliographic entry in a bibliographic file.
 You have to go through extra measures to be able to introduce blank lines between paragraphs if you are using BibTeX. 
 If you are using BibLaTeX, the situation is even worse.
 You must use an empty display math macro to introduce a blank line between paragraphs.
@@ -23,10 +26,20 @@ These files have the cite key as their file name.
 
 ## Typst
 
-The online web service, typst.app, provides live previews. 
+The online web service, **typst.app**, provides live previews. 
 This provides the instant gratification that so many crave.
 This also accelerates debugging the source code.
-It makes the experience of writing the annotated bibliography more enjoyable than doing the same task with Overleaf.
+The web service also provides easy access to other packages.
+The experience of writing the annotated bibliography on Typst is more enjoyable than doing the same task with Overleaf.
+Doing this task on either web service is more fun than doing it locally.
+
+
+
+### Downsides to Typst
+- Poor support for downloading your project from the **typst.app**. You can only download the PDF of your project with a single click of the button.
+- The supported fonts on the webservice differ from locally available fonts.
+- No strong support from sourcing files outside of the current project.
+- The manual installation of these packages locally is convoluted; a package manager for typst packages is needed.
 
 ## Features
 
@@ -44,7 +57,7 @@ It makes the experience of writing the annotated bibliography more enjoyable tha
 
 ## Limitations
 
-I need to determine the practical limit to the number of imported external files.
+The practical limit to the number of imported external files is unknown.
 
 
 ## Possbile alternatives
