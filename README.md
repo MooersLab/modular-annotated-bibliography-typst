@@ -15,7 +15,7 @@ Illustrations are worth a thousand words per image and aid in locating the desir
 ## The problem that this repo addresses
 The current support for annotated bibliographies using LaTeX or org-mode is limited to supporting the automated insertion of a few sentences in a single paragraph.
 The result is rather dull.
-They depend upon the annotation being made in an `annote` or `annotation` field inside the bibliographic entry in a bibliographic file.
+They depend upon the annotation in an `annote` or `annotation` field inside the bibliographic entry in a bibliographic file.
 You have to go through extra measures to be able to introduce blank lines between paragraphs if you are using BibTeX. 
 If you are using BibLaTeX, the situation is even worse.
 You must use an empty display math macro to introduce a blank line between paragraphs.
@@ -29,12 +29,13 @@ These files have the cite key as their file name.
 
 ## Usage
 
-1. Create a typ file for each entry and store in bibNotes folder.
+1. Create a typ file for each entry and store it in the bibNotes folder.
 2. Store associated image files in the images subfolder.
 3. Inject the bibliographic entry in a heading by calling with its cite key.
 4. Enjoy!
 
-<img width="1135" alt="Screenshot 2024-10-26 at 5 42 34 AM" src="https://github.com/user-attachments/assets/74601055-0c51-4bfd-8ab0-5936552eee8c">
+<img width="1110" alt="Screenshot 2024-10-26 at 5 42 34 AM" src="https://github.com/user-attachments/assets/52f38e75-f604-41ae-9e39-2edfb38fd8ee">
+
 
 
 
