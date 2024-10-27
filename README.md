@@ -32,8 +32,15 @@ The font in the loose `template.typ` is set to *Helvetica* for the use of local 
     - in-dexter
     - glossarium
     - wrap-it
-3. Run `typst compile main.typ`. The PDF will appear.      
-3b. Alternatively, open `main.typ` in a text editor and run `tinymist` from the same directory in the terminal. The compiled file should appear in the default browser.
+3. Run `typst compile main.typ`. The PDF will appear. Alternatively, open `main.typ` in a text editor and run `tinymist` from the same directory in the terminal. The compiled file should appear in the default browser.
+
+## Role of template.typ
+
+This file contains settings that differ between the files for **typst.app** in the zip file and the loose files for local use.
+
+- Differences in package namespaces.
+- Differences in version numbers of the packages used.
+- Differences in fonts available for use.
 
 
 ## The problem that this repo addresses
@@ -61,9 +68,6 @@ Note: the zip file uses the `preview` namespace for use on the `typst.app`. The 
 4. Enjoy!
 
 <img width="1110" alt="Screenshot 2024-10-26 at 5 42 34 AM" src="https://github.com/user-attachments/assets/52f38e75-f604-41ae-9e39-2edfb38fd8ee">
-
-
-
 
 ## Typst.app
 
