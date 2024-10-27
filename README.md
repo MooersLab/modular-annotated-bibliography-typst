@@ -11,9 +11,24 @@ Illustrations are worth a thousand words per image and aid in locating the desir
 
 <img width="1164" alt="Screenshot 2024-10-26 at 5 32 22 AM" src="https://github.com/user-attachments/assets/2df99895-ce1e-461e-b83d-3957b863dfa0">
 
-## Quick start
+## Quick start on the typst app
 
-Download the zip file.
+1. Download the zip file
+2. Uncompress it
+3. Upload the files to a new project on the typst app.
+4. Open the main.typ file. The PDF should appear. If not, refresh the browser window.
+
+Note that the imports are stored in the template.typ file which is imported by the other typ files, including the bibNotes.
+
+## Local install
+
+1. Replace the `preview` namespace with the `local` namespace in the files in the zipped folder or download the lose files outside the zippd folder.
+2. Install the following packages locally:
+    - in-dexter
+    - glossarium
+    - wrap-it
+3. Open `main.typ` in a text editor and run `tinymist` from the same directory. The compiled file should appear in the default browser.
+
 
 ## The problem that this repo addresses
 The current support for annotated bibliographies using LaTeX or org-mode is limited to supporting the automated insertion of a few sentences in a single paragraph.
@@ -32,7 +47,9 @@ These files have the cite key as their file name.
 
 ## Usage
 
-1. Create a typ file for each entry and store it in the bibNotes folder.
+Note: the zip file uses the `preview` namespace for use on the typst app. The loose files in the repo use the `local` namespace for use with locally installed typst packages. 
+
+1. Create a typ file for each entry and store it in the bibNotes folder. Include the following on the top line of each file: #import "../template.typ": *
 2. Store associated image files in the images subfolder.
 3. Inject the bibliographic entry in a heading by calling with its cite key.
 4. Enjoy!
