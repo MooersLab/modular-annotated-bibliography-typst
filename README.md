@@ -16,8 +16,8 @@ Unlike the situation with Overleaf, it is not possible to upload into the *typst
 Until the day that I create a template project for the typst universe, you will have to copy the contents of each file into files within your project folder on typst.
 Due to this labor, I kept this template to a minimum.
 
-1. Download the zip file
-2. Uncompress it
+1. Download the mab.zip file (mab stands for modular annotated bibliography).
+2. Unzip it.
 3. Upload the files to a new project on the [typst.app](https://typst.app/).
 4. Open the main.typ file. The PDF should appear. If not, refresh the browser window.
 
