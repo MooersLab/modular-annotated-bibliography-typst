@@ -19,9 +19,9 @@ Due to this labor, I kept this template to a minimum.
 1. Download the mab.zip file (mab stands for modular annotated bibliography).
 2. Unzip it.
 3. Upload the files to a new project on the [typst.app](https://typst.app/).
-4. Open the main.typ file. The PDF should appear. If not, refresh the browser window.
+4. Open the `main.typ` file. The PDF should appear. If not, refresh the browser window.
 
-Note that the package imports are stored in the `template.typ` file, imported by the other typ files, including the bibNotes. This means that only the namespaces in the `template.typ` file have to be changed from `@preview` to `@local` when running the project locally. The files outside of the zipped folder have the `@local` namespace.
+Note that the package imports are stored in the `template.typ` file, imported by the other typ files, including the bibNotes. This means that only the namespaces in the `template.typ` file must be changed from `@preview` to `@local` when running the project locally. The files outside of the zipped folder have the `@local` namespace.
 Also, the font in the `template.typ` file in the zip file is set to one that works online. 
 The font in the loose `template.typ` is set to *Helvetica* to use my local system's fonts.
 
@@ -61,7 +61,7 @@ These files have the cite key as their file name.
 
 ## Adding to the bibliography
 
-Note: the zip file uses the `preview` namespace for use on the `typst.app`. The loose files in the repo use the `local` namespace for use with locally installed typst packages. 
+Note: the zip file uses the `preview` namespace on the `typst.app`. The loose files in the repo use the `local` namespace for use with locally installed typst packages. 
 
 1. Create a typ file for each entry and store it in the bibNotes folder. Include the following on the top line of each file: #import "../template.typ": *
 2. Store associated image files in the images subfolder.
@@ -116,17 +116,18 @@ From prior experience importing about 370 external files into a single LaTeX doc
 The downside to OverLeaf is that you must click the **compile** button to have your edits deployed in the exported PDF, which happens automatically with the live previews provided by the typst.app web service.
 
 
-## Bash script to copy files from git cloned folder to project folder 
+## Bash script to copy files from the git cloned folder to the project folder 
 
 After using the code below, I can copy the required files to a local writing project by entering in the terminal `mabtyp 0397`.
+I include the same function with the name elements reversed if I do not recall the proper order in several days.
 The four-digit number is mapped to a writing project in a database.
-This writing project number is used to identify files that are part of a particular project.
+This writing project number is used to identify files for a particular project.
 
 
 
 ```bash
 function mabtyp {
-echo "Create a modular annotated bibliopgraphy (mab) subfolder and populate with required files with project number in title."
+echo "Create a modular annotated bibliography (mab) subfolder and populate with required files with project number in the title."
 if [ $# -lt 1 ]; then
   echo 1>&2 "$0: not enough arguments"
   echo "Usage1: mabtyp projectIndexNumber"
@@ -147,7 +148,7 @@ cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-biblatex-typs
 }
 
 function typmab {
-echo "Create a modular annotated bibliopgraphy (mab) subfolder and populate with required files with project number in title."
+echo "Create a modular annotated bibliography (mab) subfolder and populate with required files with project number in the title."
 if [ $# -lt 1 ]; then
   echo 1>&2 "$0: not enough arguments"
   echo "Usage1: typmab projectIndexNumber"
