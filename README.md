@@ -18,7 +18,9 @@ Illustrations are worth a thousand words per image and aid in locating the desir
 3. Upload the files to a new project on the [typst.app](https://typst.app/).
 4. Open the main.typ file. The PDF should appear. If not, refresh the browser window.
 
-Note that the imports are stored in the `template.typ` file, imported by the other typ files, including the bibNotes. This means that only the namespaces in the `template.typ` file have to be changed from `@preview` to `@local` when running the project locally. The files outside of the zipped folder have the `@local` namespace.
+Note that the package imports are stored in the `template.typ` file, imported by the other typ files, including the bibNotes. This means that only the namespaces in the `template.typ` file have to be changed from `@preview` to `@local` when running the project locally. The files outside of the zipped folder have the `@local` namespace.
+Also, the font in the `template.typ` file in the zip file is set to one that works online. 
+The font in the loose `template.typ` is set to *Helvetica* for the use of local system fonts.
 
 ## Local install
 
@@ -27,6 +29,7 @@ Note that the imports are stored in the `template.typ` file, imported by the oth
     - in-dexter
     - glossarium
     - wrap-it
+      
 3. Open `main.typ` in a text editor and run `tinymist` from the same directory. The compiled file should appear in the default browser.
 
 
