@@ -23,11 +23,11 @@ Due to this labor, I kept this template to a minimum.
 
 Note that the package imports are stored in the `template.typ` file, imported by the other typ files, including the bibNotes. This means that only the namespaces in the `template.typ` file have to be changed from `@preview` to `@local` when running the project locally. The files outside of the zipped folder have the `@local` namespace.
 Also, the font in the `template.typ` file in the zip file is set to one that works online. 
-The font in the loose `template.typ` is set to *Helvetica* for the use of local system fonts.
+The font in the loose `template.typ` is set to *Helvetica* to use my local system's fonts.
 
 ## Local install
 
-1. Replace the `preview` namespace with the `local` namespace in the files in the zipped folder or download the lose files outside the zippd folder.
+1. Replace the `preview` namespace with the `local` namespace in the files in the zipped folder or download the loose files outside the zippd folder.
 2. Install the following packages locally:
     - in-dexter
     - glossarium
@@ -115,19 +115,65 @@ From prior experience importing about 370 external files into a single LaTeX doc
 The downside to OverLeaf is that you must click the **compile** button to have your edits deployed in the exported PDF, which happens automatically with the live previews provided by the typst.app web service.
 
 
-## Installation
+## Bash script to copy files from git cloned folder to project folder 
 
-### On-line typst.app
+After using the code below, I can copy the required files to a local writing project by entering in the terminal `mabtyp 0397`.
+The four-digit number is mapped to a writing project in a database.
+This writing project number is used to identify files that are part of a particular project.
 
-Unlike the situation with Overleaf, it is not possible to upload into the *typst.app* a project as a zip file.
-Until the day that I create a template project for the typst universe, you will have to copy the contents of each file into files within your project folder on typst.
-Due to this labor, I kept this template to a minimum.
 
-1. Start a new project on your online account.
-2. Copy the contents of each file to a file of the same name on the typst app.
 
-### Local install
-After git cloning this Repository (or downloading the zip fil)e, copy the folder to your project folder and run the typst binary on the master file.
+```bash
+function mabtyp {
+echo "Create a modular annotated bibliopgraphy (mab) subfolder and populate with required files with project number in title."
+if [ $# -lt 1 ]; then
+  echo 1>&2 "$0: not enough arguments"
+  echo "Usage1: mabtyp projectIndexNumber"
+  return 2
+elif [ $# -gt 1 ]; then
+  echo 1>&2 "$0: too many projectIndexNumber"
+  echo "Usage1: mabtyp projectIndexNumber"
+  return 2
+fi
+projectID="$1"
+mkdir mab$1
+cd mab$1
+cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-biblatex-typst/main.typ mab$1.typ
+cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-biblatex-typst/mabib0573.bib mab.bib
+cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-biblatex-typst/template.typ .
+cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-biblatex-typst/glossary.typ .
+cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-biblatex-typst/bibNotes .
+}
+
+function typmab {
+echo "Create a modular annotated bibliopgraphy (mab) subfolder and populate with required files with project number in title."
+if [ $# -lt 1 ]; then
+  echo 1>&2 "$0: not enough arguments"
+  echo "Usage1: typmab projectIndexNumber"
+  return 2
+elif [ $# -gt 1 ]; then
+  echo 1>&2 "$0: too many projectIndexNumber"
+  echo "Usage1: typmab projectIndexNumber"
+  return 2
+fi
+projectID="$1"
+mkdir mab$1
+cd mab$1
+cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-biblatex-typst/main.typ mab$1.typ
+cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-biblatex-typst/mabib0573.bib mab$1.bib
+cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-biblatex-typst/template.typ .
+cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-biblatex-typst/glossary.typ .
+cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-biblatex-typst/bibNotes .
+}
+```
+
+I also use this index number at the start of my folder name for each project.
+I store the project folder in my home directory at the top level to ease navigation to a project folder.
+I enter the index number and then hit the tab key to autocomplete the folder name.
+I use [Oh-my-zsh's(https://ohmyz.sh/) support for auto-completion in the zsh shell.
+Upon auto-completion of the folder name, it becomes the current working directory, saving me a step. 
+
+
 
 ### Related repositories
 
