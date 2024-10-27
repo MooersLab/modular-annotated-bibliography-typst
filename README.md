@@ -56,7 +56,8 @@ The workaround is to import the annotations from external files to evade minglin
 The annotations are stored in one typst file per citation.
 These files have the cite key as their file name.
 
-<img width="715" alt="Screenshot 2024-10-26 at 5 43 23 AM" src="https://github.com/user-attachments/assets/0e9e6ab1-5ee2-4600-bcf9-5cc6ca78d613">
+<img width="543" alt="filetreeOnTypstApp" src="https://github.com/user-attachments/assets/c4edd529-89fc-44b5-8a3b-5a4a338fc7a1">
+
 
 ## Adding to the bibliography
 
