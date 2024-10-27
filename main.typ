@@ -1,3 +1,4 @@
+#import "template.typ": *
 #set page(width: 8.5in, height: 11in, margin: (x: 0.5in, y: 0.5in),)
 #set text(11pt)
 #set text(font: "Noto Sans Khmer")
