@@ -12,6 +12,9 @@ Illustrations are worth a thousand words per image and aid in locating the desir
 <img width="1164" alt="Screenshot 2024-10-26 at 5 32 22 AM" src="https://github.com/user-attachments/assets/2df99895-ce1e-461e-b83d-3957b863dfa0">
 
 ## Quick start on the typst.app
+Unlike the situation with Overleaf, it is not possible to upload into the *typst.app* a project as a zip file.
+Until the day that I create a template project for the typst universe, you will have to copy the contents of each file into files within your project folder on typst.
+Due to this labor, I kept this template to a minimum.
 
 1. Download the zip file
 2. Uncompress it
@@ -29,8 +32,8 @@ The font in the loose `template.typ` is set to *Helvetica* for the use of local 
     - in-dexter
     - glossarium
     - wrap-it
-      
-3. Open `main.typ` in a text editor and run `tinymist` from the same directory. The compiled file should appear in the default browser.
+3. Run `typst compile main.typ`. The PDF will appear.      
+3b. Alternatively, open `main.typ` in a text editor and run `tinymist` from the same directory in the terminal. The compiled file should appear in the default browser.
 
 
 ## The problem that this repo addresses
@@ -48,9 +51,9 @@ These files have the cite key as their file name.
 
 <img width="715" alt="Screenshot 2024-10-26 at 5 43 23 AM" src="https://github.com/user-attachments/assets/0e9e6ab1-5ee2-4600-bcf9-5cc6ca78d613">
 
-## Usage
+## Adding to the bibliography
 
-Note: the zip file uses the `preview` namespace for use on the typst app. The loose files in the repo use the `local` namespace for use with locally installed typst packages. 
+Note: the zip file uses the `preview` namespace for use on the `typst.app`. The loose files in the repo use the `local` namespace for use with locally installed typst packages. 
 
 1. Create a typ file for each entry and store it in the bibNotes folder. Include the following on the top line of each file: #import "../template.typ": *
 2. Store associated image files in the images subfolder.
@@ -68,7 +71,7 @@ The online web service, **typst.app**, provides live previews.
 This provides the instant gratification that so many crave.
 This also accelerates debugging the source code.
 The web service also provides easy access to other packages.
-The experience of writing the annotated bibliography on Typst is more enjoyable than doing the same task with Overleaf.
+The experience of writing the annotated bibliography on the **typst.app** is more enjoyable than doing the same task with Overleaf.
 Doing this task on either web service is more fun than doing it locally.
 
 
@@ -111,7 +114,7 @@ The downside to OverLeaf is that you must click the **compile** button to have y
 
 ### On-line typst.app
 
-Unlike the situation with Overleaf, it is not possible to upload into the typst.app a project as a zip file.
+Unlike the situation with Overleaf, it is not possible to upload into the *typst.app* a project as a zip file.
 Until the day that I create a template project for the typst universe, you will have to copy the contents of each file into files within your project folder on typst.
 Due to this labor, I kept this template to a minimum.
 
