@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/static/v1?label=modular-annotated-bibliography-typst&message=0.1&color=brightcolor)
+![Version](https://img.shields.io/static/v1?label=modular-annotated-bibliography-typst&message=0.2&color=brightcolor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
@@ -11,14 +11,14 @@ Illustrations are worth a thousand words per image and aid in locating the desir
 
 <img width="1164" alt="Screenshot 2024-10-26 at 5 32 22 AM" src="https://github.com/user-attachments/assets/2df99895-ce1e-461e-b83d-3957b863dfa0">
 
-## Quick start on the typst app
+## Quick start on the typst.app
 
 1. Download the zip file
 2. Uncompress it
-3. Upload the files to a new project on the typst app.
+3. Upload the files to a new project on the [typst.app](https://typst.app/).
 4. Open the main.typ file. The PDF should appear. If not, refresh the browser window.
 
-Note that the imports are stored in the `template.typ` file, which is imported by the other typ files, including the bibNotes. This means that only the namespaces in the `template.typ` file have to be changed from `@preview` to `@local` when running the project locally.
+Note that the imports are stored in the `template.typ` file, imported by the other typ files, including the bibNotes. This means that only the namespaces in the `template.typ` file have to be changed from `@preview` to `@local` when running the project locally. The files outside of the zipped folder have the `@local` namespace.
 
 ## Local install
 
@@ -125,10 +125,12 @@ After git cloning this Repository (or downloading the zip fil)e, copy the folder
 
 ## Update history
 
-|Version      | Changes                                                                                                                                    | Date                 |
+|Version      | Changes                                                                                                                                   | Date                 |
 |:-----------|:-------------------------------------------------------------------------------------------------------------------------------------------|:---------------------|
-| Version 0.1 |   Added badges, funding, and update table.  Initial commit.                                                                                | 2024 October 26      |
+| Version 0.1 | Added badges, funding, and update table.  Initial commit.                                                                                 | 2024 October 26      |
+| Version 0.2 | Switched to using `template.typ` to import of packages.  Stored the preview variants in the zip file for use online in *typst.app*.       | 2024 October 27      |
 
+## Sources of funding
 ## Sources of funding
 
 - NIH: R01 CA242845
