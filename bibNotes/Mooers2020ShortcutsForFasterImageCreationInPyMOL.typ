@@ -1,5 +1,4 @@
-#import "@preview/in-dexter:0.5.3": *
-#import "@preview/glossarium:0.5.0": gls
+#import "../template.typ": *
 
 #heading(level: 4, numbering: none)[Summary]
 <summary>
