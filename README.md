@@ -18,7 +18,7 @@ Illustrations are worth a thousand words per image and aid in locating the desir
 3. Upload the files to a new project on the typst app.
 4. Open the main.typ file. The PDF should appear. If not, refresh the browser window.
 
-Note that the imports are stored in the template.typ file which is imported by the other typ files, including the bibNotes.
+Note that the imports are stored in the `template.typ` file, which is imported by the other typ files, including the bibNotes. This means that only the namespaces in the `template.typ` file have to be changed from `@preview` to `@local` when running the project locally.
 
 ## Local install
 
