@@ -65,7 +65,7 @@ Note: the zip file uses the `preview` namespace for use on the `typst.app`. The 
 
 
 
-## Typst
+## Typst.app
 
 The online web service, **typst.app**, provides live previews. 
 This provides the instant gratification that so many crave.
@@ -74,10 +74,11 @@ The web service also provides easy access to other packages.
 The experience of writing the annotated bibliography on the **typst.app** is more enjoyable than doing the same task with Overleaf.
 Doing this task on either web service is more fun than doing it locally.
 
+The files for a project can be downloaded in a zip file by clicking on the backup button.
 
 
 
-### Downsides to Typst
+### Downsides to Typst.app
 - The supported fonts on the webservice differ from locally available fonts.
 - No strong support from sourcing files outside of the current project.
 - The manual installation of these packages locally is convoluted; a package manager for typst packages is needed.
