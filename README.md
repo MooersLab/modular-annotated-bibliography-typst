@@ -176,6 +176,23 @@ I use [Oh-my-zsh's(https://ohmyz.sh/) support for auto-completion in the zsh she
 Upon auto-completion of the folder name, it becomes the current working directory, saving me a step. 
 
 
+### Python scripts for converting a list of citekeys to 
+
+You have full control over the order of the bibliographic entries.
+The traditional approach is to list them in alphabetic order.
+This order can be reinforced by either the table of contents or a literature cited section made with the plain bibliographic style that assigns numbers to the citations in alphabetical order regardless of their citation order.
+The citations that are out of order become obvious upon rendering of the file. 
+
+If the number of entries is large and in alphabetical order when you decide to regroup the entries, you are likely to create errors if you try to do the reordering by copying and pasting.
+Instead, you can reorder a list of the side keys in an external file.
+You can then apply a script, or an elisp function in Emacs, to generate the code that will inject the cite key into the heading and it is the location and will also include the associated bibNote file.
+We provide easy to use Python script for the general user and Elisp code for the Emacs user. 
+
+|  List format         |  Python script                                               |
+|:----------------------|:----------------------------------------------------------|
+| Markdown, org-mode             |  mdList2typList.py                                         |
+| LaTeX                                     |  texList2typList.py                                         |
+
 
 ### Related repositories
 
@@ -184,12 +201,13 @@ Upon auto-completion of the folder name, it becomes the current working director
 
 ## Update history
 
-|Version      | Changes                                                                                                                                   | Date                 |
-|:-----------|:-------------------------------------------------------------------------------------------------------------------------------------------|:---------------------|
-| Version 0.1 | Added badges, funding, and update table.  Initial commit.                                                                                 | 2024 October 26      |
-| Version 0.2 | Switched to using `template.typ` to import of packages.  Stored the preview variants in the zip file for use online in *typst.app*.       | 2024 October 27      |
+|Version  | Changes                                                                                                                                                                                               | Date                           |
+|:-----------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------|
+|  0.1       | Added badges, funding, and update table.  Initial commit.                                                                                                                   | 2024 October 26        |
+|  0.2       | Switched to using `template.typ` to import of packages.  Stored the preview variants in the zip file for use online in *typst.app*.  | 2024 October 27       |
+|  0.3       | Added script to reformat bibliographic items.                                                                                                                                         | 2024 October 28       |
 
-## Sources of funding
+
 ## Sources of funding
 
 - NIH: R01 CA242845
