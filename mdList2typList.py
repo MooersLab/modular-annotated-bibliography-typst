@@ -37,6 +37,7 @@ def create_bib_notes_file(string):
 
 # Check if the correct number of command line arguments are provided
 if len(sys.argv) != 3:
+    print("The input file needs to consist of a list in the Markdown format.")
     print("Usage: python script.py <input_filename> <output_filename>")
     sys.exit(1)
 
