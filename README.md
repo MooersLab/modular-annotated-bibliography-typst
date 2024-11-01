@@ -11,6 +11,8 @@ Illustrations are worth a thousand words per image and aid in locating the desir
 
 <img width="1164" alt="Screenshot 2024-10-26 at 5 32 22 AM" src="https://github.com/user-attachments/assets/2df99895-ce1e-461e-b83d-3957b863dfa0">
 
+A nice introduction to Typst in October 2024 by Dr. Chase Brown of the University of Central Florida is found [here](https://mediasite.ouhsc.edu/Mediasite/Channel/python/browse/null/most-recent/null/0/null).
+
 ## Quick start on the typst.app
 Unlike the situation with Overleaf, it is not possible to upload into the *typst.app* a project as a zip file.
 Until the day that I create a template project for the typst universe, you will have to copy the contents of each file into files within your project folder on typst.
